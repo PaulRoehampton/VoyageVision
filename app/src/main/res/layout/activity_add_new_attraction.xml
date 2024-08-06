@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/abstract_background"
+    tools:context=".AddNewAttraction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/attractionTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/attraction_title"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded_textbox"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/attractionDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/attraction_description"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded_textbox"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:maxLines="5"
+            android:minLines="2" />
+
+        <ImageView
+            android:id="@+id/attractionImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <Button
+                android:id="@+id/selectImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Select image"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_button_background"
+                android:paddingHorizontal="20dp"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/takePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Take photo"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_button_background"
+                android:paddingHorizontal="20dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/mapFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="0dp"
+            tools:background="@color/blue">
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/attractionWebsiteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/attraction_website"
+            android:background="@drawable/rounded_textbox"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="textUri"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:singleLine="true" />
+        <Button
+            android:id="@+id/addAttractionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button_background"
+            android:paddingHorizontal="15dp"
+            android:textSize="20sp"
+            android:text="@string/add_attraction" />
+    </LinearLayout>
+</ScrollView>

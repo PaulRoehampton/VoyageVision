@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstract_background">
+
+
+  <TextView
+      android:id="@+id/welcomeText"
+      android:layout_width="wrap_content"
+      android:layout_height="60sp"
+      android:layout_above="@+id/fullNameEditText"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginStart="4dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginEnd="0dp"
+      android:layout_marginBottom="100dp"
+      android:gravity="center_horizontal"
+      android:text="Register"
+      android:textColor="@color/white"
+      android:textSize="30sp" />
+
+  <EditText
+      android:id="@+id/fullNameEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/emailEditText"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="50dp"
+      android:background="@drawable/rounded_textbox"
+      android:drawableStart="@drawable/user_icon40"
+      android:hint=" Full Name"
+      android:padding="10dp"
+      android:textSize="20sp" />
+
+  <EditText
+      android:id="@+id/emailEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/passwordEditText"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="50dp"
+      android:background="@drawable/rounded_textbox"
+      android:drawableStart="@drawable/email_icon40"
+      android:hint=" Email"
+      android:padding="10dp"
+      android:textSize="20sp" />
+
+  <EditText
+      android:id="@+id/passwordEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/registerButton"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="100dp"
+      android:background="@drawable/rounded_textbox"
+      android:drawableStart="@drawable/password_icon40"
+      android:hint=" Password"
+      android:inputType="textPassword"
+      android:padding="10dp" />
+
+  <Button
+      android:id="@+id/registerButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="100dp"
+      android:background="@drawable/rounded_button_background"
+      android:onClick="registerUser"
+      android:layout_centerHorizontal="true"
+      android:paddingHorizontal="20dp"
+      android:text="Register"
+      android:textSize="20sp" />
+
+</RelativeLayout>

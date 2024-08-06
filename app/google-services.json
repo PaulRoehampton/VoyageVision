@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "610381894716",
+    "project_id": "voyagevision-1a26b",
+    "storage_bucket": "voyagevision-1a26b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610381894716:android:06ae4afa9ef766cf7e1f39",
+        "android_client_info": {
+          "package_name": "com.example.voyagevision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610381894716-0v80us64v16vm834pc5chp54eofjqi30.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.voyagevision",
+            "certificate_hash": "a81462535d476c2403419ab30dbe1c06b1647236"
+          }
+        },
+        {
+          "client_id": "610381894716-via7493aj1otl2oaqn4bd7avi332a757.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw54kzhKKuiAz8r4iXvh7ElQ5hE2i4HK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610381894716-via7493aj1otl2oaqn4bd7avi332a757.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

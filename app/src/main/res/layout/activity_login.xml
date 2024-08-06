@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstract_background">
+
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center_horizontal"
+            android:text="Voyage Vision"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/newUser_txt"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:drawableStart="@drawable/email_icon40"
+                    android:hint="Email"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:drawableStart="@drawable/password_icon40"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/rounded_button_background"
+                    android:onClick="login"
+                    android:text="Login"
+                    android:paddingHorizontal="20dp"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/forgotPassword_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="forgotPassword"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/newUser_txt"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="49dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:onClick="register"
+            android:text="New user? Register here"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_below="@+id/welcomeText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="10dp"
+
+            app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstract_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Name:"
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/changeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_textbox"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/changeNameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:paddingHorizontal="20dp"
+            android:textSize="20sp"
+            android:text="Update Name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Email:"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/changeEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_textbox"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/changeEmailButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:paddingHorizontal="20dp"
+            android:textSize="20sp"
+            android:text="Update Email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password:"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/changePasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_textbox"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/changePasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:paddingHorizontal="20dp"
+            android:textSize="20sp"
+            android:text="Update Password" />
+
+        <Button
+            android:id="@+id/deleteProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Profile"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:backgroundTint="#FF80AB"
+            android:paddingHorizontal="20dp"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
