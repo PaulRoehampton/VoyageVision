@@ -1,4 +1,7 @@
 # Voyage Vision
+![voyage_vision30%](https://github.com/user-attachments/assets/7d50f900-e7f8-426b-b4df-d3852ee26558)
+
+
 Voyage Vision is a mobile travel application for Android devices that serves as a comprehensive platform for travelers to access information about tourist 
 attractions. This app was developed as part of a Bachelor of Science in Computing Technology dissertation project.
 ### Note: The app is currently not fully functional as it is no longer linked to the Firebase database.
